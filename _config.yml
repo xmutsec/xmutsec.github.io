@@ -102,4 +102,6 @@ theme: jekyll-theme-cayman
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/xmutsec/xmutsec.github.io.git
+  branch: master
