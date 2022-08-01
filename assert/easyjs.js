@@ -23,35 +23,17 @@ var team = new Vue({
           object:[
                {
                     date: "2022",
+                    links:['https://rce.iloli.moe','https://www.baidu.com','https://www.bilibili.com'],
+                    avatars:['https://bfs.iloli.moe/logo.png','https://bfs.iloli.moe/logo.png','https://bfs.iloli.moe/logo.png'],
+                    descri:['我是中国人我是中国人我是中国人我是中国人','中国人是我中国人是我中国人是我中国人是我', '你好世界你好世界你好世界你好世界你好世界你好世界'],
                     members: ['Test1', 'Test2', 'Test3']
                },
                {
-                    date: "2021",
-                    members: ['Test1', 'Test2', 'Test3', 'Test4']
-               },
-               {
                     date: "2019",
-                    members: ['Test1', 'Test2', 'Test3', 'Test4', 'Test5']
-               },
-               {
-                    date: "2019",
-                    members: ['Test1', 'Test2', 'Test3', 'Test4', 'Test5']
-               },
-               {
-                    date: "2019",
-                    members: ['Test1', 'Test2', 'Test3', 'Test4', 'Test5']
-               },
-               {
-                    date: "2019",
-                    members: ['Test1', 'Test2', 'Test3', 'Test4', 'Test5']
-               },
-               {
-                    date: "2019",
-                    members: ['Test1', 'Test2', 'Test3', 'Test4', 'Test5']
-               },
-               {
-                    date: "2019",
-                    members: ['Test1', 'Test2', 'Test3', 'Test4', 'Test5']
+                    links:['https://rce.iloli.moe','https://www.baidu.com','https://www.bilibili.com'],
+                    avatars:['https://bfs.iloli.moe/logo.png','https://bfs.iloli.moe/logo.png','https://bfs.iloli.moe/logo.png'],
+                    descri:['日本人日本人日本人日本人日本人日本人','日本人日本人日本人日本人日本人日本人日本人日本人日本人日本人日本人', '你好世日本人日本人日本人日本人日本人'],
+                    members: ['Test1', 'Test2', 'Test3']
                }
           ]
      },
@@ -61,6 +43,9 @@ var team = new Vue({
                return numbers.filter(function (number) {
                     return number
                })
+          },
+          getHref: function (url){
+               return url
           }
      }
 })
@@ -70,14 +55,20 @@ var award = new Vue({
      data: {
           object:[
                {
+                    date: "主办",
+                    plan: [
+                         '2022年大胃王比赛', 
+                         '2021年校园10000km猝死跑'
+                    ],
+               },{
                     date: "2022",
-                    members: [
+                    plan: [
                          '2022年最佳吃饭大赛总决赛总冠军', 
                          '中国互联网应急响应中心最佳封禁IP单位'
                     ],
                },{
                     date: "2021",
-                    members: [
+                    plan: [
                          '2021年XX单位XX攻防演习最佳被溯源单位', 
                     ]
                }

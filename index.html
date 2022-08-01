@@ -54,16 +54,23 @@
                </section>
                <section id="members">
                     <span class="bfont">历届成员</span>
-                    <nav v-for="mem in object">
+                    <nav v-for="(mem) in object">
                          <h3>{{ mem.date }}</h3>
-                         <p v-for="(members,value) in mem.members">{{ members }}</p>
+                         <div v-for="(index) in mem['members'].length">
+                              <div class="panel">
+                                   <img :src="mem.avatars[index-1]">
+                                   <li><p class="ez" style="font-weight: bold;">{{ mem.members[index-1] }}</p></li>
+                                   <li><p class="ez">{{ mem.descri[index-1] }}</p></li>
+                                   <li><p class="ez">Blog:  <a :href="getHref(mem.links[index-1])" target="_blank">{{ mem.links[index-1] }}</a></p></li>
+                              </div>
+                         </div>
                     </nav>
                </section>
                <section id="award">
                     <span class="bfont">足迹</span>
-                    <nav v-for="mem in object">
-                         <h3>{{ mem.date }}</h3>
-                         <p v-for="(members,value) in mem.members">{{ members }}</p>
+                    <nav v-for="award in object">
+                         <h3>{{ award.date }}</h3>
+                         <p v-for="(threat,value) in award.plan">{{ threat }}</p>
                     </nav>
                </section>
                <section id="join">
