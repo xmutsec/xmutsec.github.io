@@ -47,11 +47,13 @@ a.active{color:#d82727!important}
      font-weight: 500;
 }
 .des{
-     font-size: 20px;
+     line-height: 0px;
+     color: rgb(114, 114, 114);
+     font-size: 11px;
 }
 .row{
      position: relative;
-     top: 50px;
+     top: 10px;
      width: 100%;
 }
 .line{
@@ -120,6 +122,9 @@ a.active{color:#d82727!important}
 }
 .row section {
      display: none;
+}
+.banner{
+     text-align: center;
 }
 .row section.active {
      display: block;
