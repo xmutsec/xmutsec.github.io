@@ -4,8 +4,11 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="./favicon.ico" />
      <title>XMUTSEC - Hack The Planet</title>
      <script src="./assert/jquery.js"></script>
+     <!-- <script src="./assert/vue.min.js"></script> -->
+     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
      <link rel="stylesheet" href="./assert/styles.css">
 </head>
 <body>
@@ -27,7 +30,7 @@
                </nav>
                <section id="infor" class="active">
                     <span class="bfont">协会介绍</span>
-                    <p>我们的故事要从二零一六年的夏天说起在那一年的六月九日几位志同道合的少年人在鹭江之畔一拍即合成立了一支CTF战队CodeMonster与之同时诞生的还有厦门理工学院信息安全协会这一天发生的这件事改变了后来许多人的人生轨迹我想这其中也可能包括正在屏幕前看这篇文章的你</p>
+                    <p>我们的故事要从二零一六年的夏天说起在那一年的六月九日几位志同道合的少年人在鹭江之畔一拍即合成立了一支CTF战队CodeMonster与之同时诞生的还有圣后溪英兰德皇家幼儿园附属理工学院信息安全协会（厦门理工学院信息安全协会）这一天发生的这件事改变了后来许多人的人生轨迹我想这其中也可能包括正在屏幕前看这篇文章的你</p>
                </section>
                <section id="branch">
                     <span class="bfont">方向分支</span>
@@ -48,11 +51,17 @@
                </section>
                <section id="members">
                     <span class="bfont">历届成员</span>
-                    <p>虚位以待...</p>
+                    <nav v-for="mem in object">
+                         <h3>{{ mem.date }}</h3>
+                         <p v-for="(members,value) in mem.members">{{ members }}</p>
+                    </nav>
                </section>
                <section id="award">
                     <span class="bfont">足迹</span>
-                    <p>空空的欸...</p>
+                    <nav v-for="mem in object">
+                         <h3>{{ mem.date }}</h3>
+                         <p v-for="(members,value) in mem.members">{{ members }}</p>
+                    </nav>
                </section>
                <section id="join">
                     <p>投递简历至：join#iloli.moe (Modify # to @)</p>
