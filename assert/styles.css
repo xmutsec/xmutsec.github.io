@@ -44,13 +44,12 @@
      width: 100%;
 }
 .footer{
+     position: relative;
+     top: 100px;
      display: flex;
-     position: fixed;
-     margin: 0 auto;
-     width: 100%;
-     bottom: 10px;
-     justify-content: center;
      align-items: center;
+     width: 100%;
+     margin: 0 auto;
      flex-direction: column;
      color: rgb(156, 13, 43);
 }
