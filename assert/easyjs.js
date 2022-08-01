@@ -9,7 +9,12 @@ function switchTo(target) {
      });
      $(target).addClass('active');
 }
-
+$(function(){
+     $(".nav").find("a").click(function(e){
+          $('.nav a').removeClass("active");
+          $(this).addClass("active");
+     });
+})
 var team = new Vue({
      el: '#members',
      data: {

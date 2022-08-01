@@ -5,6 +5,15 @@
      margin: 0 auto;
      width: 780px;
 }
+/* cnm傻逼玩意 */
+.rgb{
+     animation: rgb 1s infinite;
+}
+@keyframes rgb{li
+     0% {color:rgb(255, 0, 0)}
+     50%{color: rgb(0,255,0);}
+     100%{color: rgb(0,0,255);}
+}
 .nav{
      max-width: 500px;
      width: 100%;
@@ -22,11 +31,11 @@
 .nav a{
      text-decoration: none;
      color: #000;
+     cursor: pointer;
      margin: 0px 5px 0px 7px;
 }
-.nav a:before{
-     color: red;
-}
+
+a.active{color:#d82727!important}
 .bfont{
      border-left: 5px solid #000;
      padding-left: 10px;
@@ -66,8 +75,21 @@
      color: rgb(156, 13, 43);
      text-decoration: none;
 }
+@keyframes jump {
+     0%{
+          transform: rotate(0deg);
+          margin-top: 10px;
+     }
+     100%{
+          transform: rotate(180deg);
+          margin-top: -10px;
+     }
+}
 .flogo{
      width: 50px;
+     position: relative;
+     top: 0;
+     animation: jump 0.1s infinite;
 }
 .row section {
      display: none;
