@@ -1,0 +1,85 @@
+/* 
+     @Author: Po7mn1
+*/
+.container{
+     margin: 0 auto;
+     width: 800px;
+
+}
+.nav{
+     max-width: 500px;
+     width: 100%;
+     margin: 0 auto;
+     margin-top: 10px;
+     list-style: none;
+     display: flex;
+     justify-content: center;
+}
+.logo{
+     display: flex;
+     width: 180px;
+     margin: 0 auto;
+}
+.nav a{
+     text-decoration: none;
+     color: #000;
+     margin: 0px 5px 0px 7px;
+}
+.bfont{
+     font-size: 20px;
+}
+.tit{
+     font-size: 35px;
+     line-height: 5px;
+     font-weight: 500;
+}
+.des{
+     font-size: 20px;
+}
+.row{
+     position: relative;
+     top: 50px;
+     width: 100%;
+}
+.footer{
+     display: flex;
+     position: fixed;
+     margin: 0 auto;
+     width: 100%;
+     bottom: 10px;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     color: rgb(156, 13, 43);
+}
+.footer p{
+     line-height: 1px;
+     font-size: 13px;
+}
+.footer a{
+     color: rgb(156, 13, 43);
+     text-decoration: none;
+}
+.flogo{
+     width: 50px;
+}
+.row section {
+     display: none;
+}
+.row section.active {
+     display: block;
+}
+section {
+     -webkit-animation: fadenum .5s;
+     -moz-animation: fadenum .5s;
+     animation: fadenum .5s;
+}
+@keyframes fadenum {
+     0% {
+         opacity: 0;
+     }
+ 
+     100% {
+         opacity: 1;
+     }
+ }
