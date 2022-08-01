@@ -3,7 +3,7 @@
 */
 .container{
      margin: 0 auto;
-     width: 800px;
+     width: 780px;
 }
 .nav{
      max-width: 500px;
@@ -79,6 +79,7 @@ section {
      -webkit-animation: fadenum .5s;
      -moz-animation: fadenum .5s;
      animation: fadenum .5s;
+     line-height: 30px;
 }
 @keyframes fadenum {
      0% {
