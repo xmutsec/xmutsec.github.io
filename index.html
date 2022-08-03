@@ -28,6 +28,8 @@
                     <li><a class="line">/</a></li>
                     <li><a goto="#award">足迹</a></li>
                     <li><a class="line">/</a></li>
+                    <li><a goto="#links">友联</a></li>
+                    <li><a class="line">/</a></li>
                     <li><a goto="#members">历届成员</a></li>
                     <li><a class="line">/</a></li>
                     <li><a goto="#join">加入我们</a></li>
@@ -37,6 +39,19 @@
                     <p>我们的故事要从二零一六年的夏天说起在那一年的六月九日几位志同道合的少年人在鹭江之畔一拍即合成立了一支CTF战队CodeMonster与之同时诞生的还有圣后溪英兰德皇家幼儿园附属理工学院信息安全协会（厦门理工学院信息安全协会）这一天发生的这件事改变了后来许多人的人生轨迹我想这其中也可能包括正在屏幕前看这篇文章的你</p>
                     <p class="alert"><p class="rgb">协会纳新：<a href="https://share.weiyun.com/sNwHl0qg" target="_blank">https://share.weiyun.com/sNwHl0qg</a> (Easy)</p></p>
                     <img src="./assert/logo.jpg">
+               </section>
+               <section id="links" class="active">
+                    <span class="bfont">友情链接（排名不分前后）</span>
+                    <nav v-for="(link) in object">
+                         <div v-for="(index) in link['names'].length">
+                              <div class="links">
+                                   <img :src="link.avatars[index-1]">
+                                   <li><p class="ez" style="font-weight: bold;">{{ link.names[index-1] }}</p></li>
+                                   <li><p class="ez">{{ link.descri[index-1] }}</p></li>
+                                   <li><p class="ez">Blog:  <a :href="getHref(link.links[index-1])" target="_blank">{{ link.links[index-1] }}</a></p></li>
+                              </div>
+                         </div>
+                    </nav>          
                </section>
                <section id="branch">
                     <span class="bfont">方向分支</span>

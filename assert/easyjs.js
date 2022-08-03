@@ -17,6 +17,31 @@ $(function(){
           $(this).addClass("active");
      });
 })
+var links = new Vue({
+     el: '#links',
+     data: {
+          object:[
+               {
+                    links:['https://fjnusec.cn/','https://dlusec.cn/'],
+                    avatars:['https://cdn.jsdelivr.net/gh/NISASec/blog_image/blog/QQ%E5%9B%BE%E7%89%8720210804132927.jpg','https://dlusec.cn/img/DLUSEC.png'],
+                    names: ['福建师范大学网络与信息安全协会', '大理大学网络安全协会'],
+                    descri: ['FJNUSEC','DLUSEC']
+               },
+          ]
+     },
+     // cnm报你妈错呢傻逼
+     methods: {
+          even: function (numbers) {
+               return numbers.filter(function (number) {
+                    return number
+               })
+          },
+          getHref: function (url){
+               return url
+          }
+     }
+})
+
 var team = new Vue({
      el: '#members',
      data: {
