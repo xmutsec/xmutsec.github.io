@@ -23,6 +23,11 @@
      display: flex;
      justify-content: center;
 }
+.img1{
+     display: flex;
+     width: 400px;
+     margin: 0 auto;
+}
 .logo{
      display: flex;
      width: 180px;
