@@ -57,7 +57,7 @@ var team = new Vue({
                     date: "2019",
                     links:['https://rce.iloli.moe','https://www.baidu.com','https://www.bilibili.com'],
                     avatars:['https://bfs.iloli.moe/logo.png','https://bfs.iloli.moe/logo.png','https://bfs.iloli.moe/logo.png'],
-                    descri:['日本人日本人日本人日本人日本人日本人','日本人日本人日本人日本人日本人日本人日本人日本人日本人日本人日本人', '你好世日本人日本人日本人日本人日本人'],
+                    descri:['呃呃呃呃呃','呃呃呃呃呃', '呃呃呃呃呃'],
                     members: ['Test1', 'Test2', 'Test3']
                }
           ]
