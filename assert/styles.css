@@ -9,6 +9,9 @@
 .rgb{
      animation: rgb 1s infinite;
 }
+.lkll{
+     position: fixed;right: 30px;bottom: 30px;margin-bottom: 20px;
+}
 @keyframes rgb{li
      0% {color:rgb(255, 0, 0)}
      50%{color: rgb(0,255,0);}
