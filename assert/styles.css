@@ -1,6 +1,9 @@
 /* 
      @Author: Po7mn1
 */
+*{
+     font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
+}
 .container{
      margin: 0 auto;
      width: 780px;
