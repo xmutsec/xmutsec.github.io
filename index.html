@@ -142,5 +142,20 @@
                src="https://cdn.jsdelivr.net/npm/sakana-widget@2.3.2/lib/sakana.min.js"
                ></script>
           </div>
+          <div style="position: fixed;left: 30px;bottom: 30px;margin-bottom: 20px;z-index:99;">
+               <div id="takina-widget"></div>
+               <script>
+                    function inittakinaWidget(){
+                         const takina = SakanaWidget.getCharacter('takina');
+                         SakanaWidget.registerCharacter('takina-slow', takina);
+                         new SakanaWidget({ character: 'takina-slow' }).mount('#takina-widget');
+                    }
+               </script>
+               <script
+               async
+               onload="inittakinaWidget()"
+               src="https://cdn.jsdelivr.net/npm/sakana-widget@2.3.2/lib/sakana.min.js"
+               ></script>
+           </div>
      </body>
 </html>
