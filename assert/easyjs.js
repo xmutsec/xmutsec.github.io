@@ -48,17 +48,10 @@ var team = new Vue({
           object:[
                {
                     date: "2022",
-                    links:['https://rce.iloli.moe','https://www.baidu.com','https://www.bilibili.com'],
-                    avatars:['https://bfs.iloli.moe/logo.png','https://bfs.iloli.moe/logo.png','https://bfs.iloli.moe/logo.png'],
-                    descri:['我是中国人我是中国人我是中国人我是中国人','中国人是我中国人是我中国人是我中国人是我', '你好世界你好世界你好世界你好世界你好世界你好世界'],
-                    members: ['Test1', 'Test2', 'Test3']
-               },
-               {
-                    date: "2019",
-                    links:['https://rce.iloli.moe','https://www.baidu.com','https://www.bilibili.com'],
-                    avatars:['https://bfs.iloli.moe/logo.png','https://bfs.iloli.moe/logo.png','https://bfs.iloli.moe/logo.png'],
-                    descri:['呃呃呃呃呃','呃呃呃呃呃', '呃呃呃呃呃'],
-                    members: ['Test1', 'Test2', 'Test3']
+                    links:['https://www.baidu.com'],
+                    avatars:['https://www.baidu.com'],
+                    descri:['xmutsec'],
+                    members: ['Test1']
                }
           ]
      },
