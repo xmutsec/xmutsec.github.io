@@ -53,8 +53,38 @@ var team = new Vue({
                     descri:['什么都不会/做什么都不行/我好废物啊。'],
                     members: ['rYu1nser']
                },{
-                    date: "2026",
-                    links:['https://rce.iloli.moe'],
+                    date: "2016",
+                    links:['https://'],
+                    avatars:['https://bfs.iloli.moe/logo.png'],
+                    descri:['什么都不会/做什么都不行/我好废物啊。'],
+                    members: ['rYu1nser']
+               },{
+                    date: "2016",
+                    links:['https://'],
+                    avatars:['https://bfs.iloli.moe/logo.png'],
+                    descri:['什么都不会/做什么都不行/我好废物啊。'],
+                    members: ['rYu1nser']
+               },{
+                    date: "2016",
+                    links:['https://'],
+                    avatars:['https://bfs.iloli.moe/logo.png'],
+                    descri:['什么都不会/做什么都不行/我好废物啊。'],
+                    members: ['rYu1nser']
+               },{
+                    date: "2016",
+                    links:['https://'],
+                    avatars:['https://bfs.iloli.moe/logo.png'],
+                    descri:['什么都不会/做什么都不行/我好废物啊。'],
+                    members: ['rYu1nser']
+               },{
+                    date: "2016",
+                    links:['https://'],
+                    avatars:['https://bfs.iloli.moe/logo.png'],
+                    descri:['什么都不会/做什么都不行/我好废物啊。'],
+                    members: ['rYu1nser']
+               },{
+                    date: "2016",
+                    links:['https://'],
                     avatars:['https://bfs.iloli.moe/logo.png'],
                     descri:['什么都不会/做什么都不行/我好废物啊。'],
                     members: ['rYu1nser']
@@ -107,12 +137,22 @@ var award = new Vue({
                },{
                     date: "2020",
                     plan: [
-                         '？'
+                         '[2020] - 福建省黑盾杯网络空间安全技能大赛 一等奖',
+                         '[2020] - 网鼎杯网络安全大赛 青龙组 晋级半决赛',
                     ],
                },{
                     date: "2019",
                     plan: [
-                         '？'
+                         '[2019] - X-NUCA 全国高校网安联赛 第 23 名',
+                         '[2019] - 福建省黑盾杯网络空间安全技能大赛 特等奖',
+                         '[2019] - 全国软件测试大赛 Web 安全测试个人赛总决赛 二等奖',
+                         '[2019] - 全国软件测试大赛 Web 安全测试个人赛省赛 一等奖',
+                         '[2019] - 全国大学生信息安全竞赛创新能力实践赛全国总决赛 三等奖',
+                         '[2019] - 第十二届全国大学生信息安全竞赛创新能力实践赛华东南赛区半决赛 特等奖',
+                         '[2019] - 第五届百越杯福建省高校网络空间安全大赛 三等奖',
+                         '[2019] - 高校网络信息安全管理运维挑战赛 三等奖',
+                         '[2019] - “黄鹤杯”网络安全人才与创新峰会暨网络安全服务与创新能力大赛 优秀奖',
+                         '[2019] - 西湖论剑中国杭州网络安全技能大赛 优秀奖',
                     ],
                },{
                     date: "2018",
@@ -134,7 +174,8 @@ var award = new Vue({
                     ],
                     date: "2016",
                     plan: [
-                         '[2016/12/11] - “百越杯”第二届福建省高校网络空间安全大赛 二等奖、三等奖、优胜奖'
+                         '[2016/12/11] - “百越杯”第二届福建省高校网络空间安全大赛 二等奖、三等奖、优胜奖',
+                         '[2016/06/09] - 协会成立'
                     ]
                }
           ]
