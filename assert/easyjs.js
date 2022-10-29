@@ -48,48 +48,41 @@ var team = new Vue({
           object:[
                {
                     date: "2021",
-                    links:['https://rce.iloli.moe'],
-                    avatars:['https://bfs.iloli.moe/logo.png'],
-                    descri:['什么都不会/做什么都不行/我好废物啊。'],
-                    members: ['rYu1nser']
+                    links:['Anonymous'],
+                    avatars:['Anonymous'],
+                    descri:['Anonymous'],
+                    members: ['Anonymous']
+               },{
+                    date: "2020",
+                    links:['Anonymous'],
+                    avatars:['Anonymous'],
+                    descri:['Anonymous'],
+                    members: ['Anonymous']
+               },{
+                    date: "2019",
+                    links:['Anonymous'],
+                    avatars:['Anonymous'],
+                    descri:['Anonymous'],
+                    members: ['Anonymous']
+               },{
+                    date: "2018",
+                    links:['Anonymous'],
+                    avatars:['Anonymous'],
+                    descri:['Anonymous'],
+                    members: ['Anonymous']
+               },{
+                    date: "2017",
+                    links:['Anonymous'],
+                    avatars:['Anonymous'],
+                    descri:['Anonymous'],
+                    members: ['Anonymous']
                },{
                     date: "2016",
-                    links:['https://'],
-                    avatars:['https://bfs.iloli.moe/logo.png'],
-                    descri:['什么都不会/做什么都不行/我好废物啊。'],
-                    members: ['rYu1nser']
-               },{
-                    date: "2016",
-                    links:['https://'],
-                    avatars:['https://bfs.iloli.moe/logo.png'],
-                    descri:['什么都不会/做什么都不行/我好废物啊。'],
-                    members: ['rYu1nser']
-               },{
-                    date: "2016",
-                    links:['https://'],
-                    avatars:['https://bfs.iloli.moe/logo.png'],
-                    descri:['什么都不会/做什么都不行/我好废物啊。'],
-                    members: ['rYu1nser']
-               },{
-                    date: "2016",
-                    links:['https://'],
-                    avatars:['https://bfs.iloli.moe/logo.png'],
-                    descri:['什么都不会/做什么都不行/我好废物啊。'],
-                    members: ['rYu1nser']
-               },{
-                    date: "2016",
-                    links:['https://'],
-                    avatars:['https://bfs.iloli.moe/logo.png'],
-                    descri:['什么都不会/做什么都不行/我好废物啊。'],
-                    members: ['rYu1nser']
-               },{
-                    date: "2016",
-                    links:['https://'],
-                    avatars:['https://bfs.iloli.moe/logo.png'],
-                    descri:['什么都不会/做什么都不行/我好废物啊。'],
-                    members: ['rYu1nser']
-               },
-               
+                    links:['Anonymous'],
+                    avatars:['Anonymous'],
+                    descri:['Anonymous'],
+                    members: ['Anonymous']
+               }
           ]
      },
      // cnm报你妈错呢傻逼
@@ -114,7 +107,7 @@ var award = new Vue({
                     plan: [
                          '[2022] - 2022年CMCTF-5（AWD）线上攻防对抗赛', 
                          '[2022] - 2022年CMCTF-4（CTF）比赛',
-                         '[2021] - 2021年厦门理工学院第二节网络空间安全大赛',
+                         '[2021] - 2021年厦门理工学院第三届网络空间安全大赛',
                          '[2018] - 2018年举办第二届厦门理工“国科-i春秋杯”网络信息安全大赛',
                          '[2018/02/13] - 举办2018MOCTF新春欢乐赛♂♂♂',
                          '[2017/05/06] - 举办第一届厦门理工“国科杯”网络信息安全大赛'

@@ -45,6 +45,7 @@
      display: flex;
      width: 180px;
      margin: 0 auto;
+     padding-bottom: 14px;
 }
 .nav a{
      text-decoration: none;
