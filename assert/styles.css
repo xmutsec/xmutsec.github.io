@@ -20,6 +20,14 @@
      50%{color: rgb(0,255,0);}
      100%{color: rgb(0,0,255);}
 }
+.icon-mini{
+     padding-right: 10px;
+     width: 30px;
+}
+.lfont{
+     margin: 20px 0px 10px 0px;
+     display: flex;
+}
 #award .nav-1{
      margin-bottom: 9px;
      line-height: 14px;
@@ -28,7 +36,7 @@
      margin-top: 30px;
 }
 .nav{
-     max-width: 500px;
+     max-width: 570px;
      width: 100%;
      margin: 0 auto;
      margin-top: 10px;

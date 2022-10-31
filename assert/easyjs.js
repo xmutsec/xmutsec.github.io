@@ -78,10 +78,10 @@ var team = new Vue({
                     members: ['Anonymous']
                },{
                     date: "2016",
-                    links:['Anonymous'],
-                    avatars:['Anonymous'],
-                    descri:['Anonymous'],
-                    members: ['Anonymous']
+                    links:['https://github.com/xishir'],
+                    avatars:['/assert/members/xishir.jpg'],
+                    descri:['De1ta/Codemonster CTF退役选手 Tencent 打杂工程师'],
+                    members: ['xishir (Founder)']
                }
           ]
      },
