@@ -48,40 +48,40 @@ var team = new Vue({
           object:[
                {
                     date: "2021",
-                    links:['Anonymous'],
-                    avatars:['Anonymous'],
-                    descri:['Anonymous'],
-                    members: ['Anonymous']
+                    links:['Anonymous','Anonymous','Anonymous','Anonymous'],
+                    avatars:['/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg'],
+                    descri:['Anonymous','Anonymous','Anonymous','Anonymous'],
+                    members: ['Anonymous','Anonymous','Anonymous','Anonymous']
                },{
                     date: "2020",
-                    links:['Anonymous'],
-                    avatars:['Anonymous'],
-                    descri:['Anonymous'],
-                    members: ['Anonymous']
+                    links:['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
+                    avatars:['/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg'],
+                    descri:['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
+                    members: ['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous']
                },{
                     date: "2019",
-                    links:['Anonymous'],
-                    avatars:['Anonymous'],
-                    descri:['Anonymous'],
-                    members: ['Anonymous']
+                    links:['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
+                    avatars:['/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg'],
+                    descri:['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
+                    members: ['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous']
                },{
                     date: "2018",
-                    links:['Anonymous'],
-                    avatars:['Anonymous'],
-                    descri:['Anonymous'],
-                    members: ['Anonymous']
+                    links:['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
+                    avatars:['/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg'],
+                    descri:['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
+                    members: ['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous']
                },{
                     date: "2017",
-                    links:['Anonymous'],
-                    avatars:['Anonymous'],
-                    descri:['Anonymous'],
-                    members: ['Anonymous']
+                    links:['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
+                    avatars:['/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg'],
+                    descri:['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
+                    members: ['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous']
                },{
                     date: "2016",
-                    links:['https://github.com/xishir'],
-                    avatars:['/assert/members/xishir.jpg'],
-                    descri:['De1ta/Codemonster CTF退役选手 Tencent 打杂工程师'],
-                    members: ['xishir (Founder)']
+                    links:['https://github.com/xishir','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
+                    avatars:['/assert/members/xishir.jpg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg'],
+                    descri:['De1ta/Codemonster CTF退役选手 Tencent 打杂工程师','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
+                    members: ['xishir (Founder)','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous']
                }
           ]
      },
@@ -105,11 +105,11 @@ var award = new Vue({
                {
                     date: "主办",
                     plan: [
-                         '[2022] - 2022年SkyNICOCTF暨厦门理工学院第四届网络空间安全大赛', 
-                         '[2022] - 2022年CMCTF-5（AWD）线上攻防对抗赛', 
-                         '[2022] - 2022年CMCTF-4（CTF）比赛',
-                         '[2021] - 2021年厦门理工学院第三届网络空间安全大赛',
-                         '[2018] - 2018年举办第二届厦门理工“国科-i春秋杯”网络信息安全大赛',
+                         '[2022/11/04] - 2022年SkyNICOCTF暨厦门理工学院第四届网络空间安全大赛', 
+                         '[2022/05/??] - 2022年CMCTF-5（AWD）线上攻防对抗赛', 
+                         '[2022/04/??] - 2022年CMCTF-4（CTF）比赛',
+                         '[2021/10/??] - 2021年厦门理工学院第三届网络空间安全大赛',
+                         '[2018/??/??] - 2018年举办第二届厦门理工“国科-i春秋杯”网络信息安全大赛',
                          '[2018/02/13] - 举办2018MOCTF新春欢乐赛♂♂♂',
                          '[2017/05/06] - 举办第一届厦门理工“国科杯”网络信息安全大赛'
                     ],
@@ -126,28 +126,28 @@ var award = new Vue({
                },{
                     date: "2021",
                     plan: [
-                         '[2021/12/8] - 第二届“闽盾杯”网络空间安全大赛教育行业攻防赛道，防守方第一名', 
-                         '[2021/12/8] - 第二届“闽盾杯”网络空间安全大赛黑盾赛道，高校组第三名', 
+                         '[2021/12/08] - 第二届“闽盾杯”网络空间安全大赛教育行业攻防赛道，防守方第一名', 
+                         '[2021/12/08] - 第二届“闽盾杯”网络空间安全大赛黑盾赛道，高校组第三名', 
                     ]
                },{
                     date: "2020",
                     plan: [
-                         '[2020] - 福建省黑盾杯网络空间安全技能大赛 一等奖',
-                         '[2020] - 网鼎杯网络安全大赛 青龙组 晋级半决赛',
+                         '[2020/??/??] - 福建省黑盾杯网络空间安全技能大赛 一等奖',
+                         '[2020/??/??] - 网鼎杯网络安全大赛 青龙组 晋级半决赛',
                     ],
                },{
                     date: "2019",
                     plan: [
-                         '[2019] - X-NUCA 全国高校网安联赛 第 23 名',
-                         '[2019] - 福建省黑盾杯网络空间安全技能大赛 特等奖',
-                         '[2019] - 全国软件测试大赛 Web 安全测试个人赛总决赛 二等奖',
-                         '[2019] - 全国软件测试大赛 Web 安全测试个人赛省赛 一等奖',
-                         '[2019] - 全国大学生信息安全竞赛创新能力实践赛全国总决赛 三等奖',
-                         '[2019] - 第十二届全国大学生信息安全竞赛创新能力实践赛华东南赛区半决赛 特等奖',
-                         '[2019] - 第五届百越杯福建省高校网络空间安全大赛 三等奖',
-                         '[2019] - 高校网络信息安全管理运维挑战赛 三等奖',
-                         '[2019] - “黄鹤杯”网络安全人才与创新峰会暨网络安全服务与创新能力大赛 优秀奖',
-                         '[2019] - 西湖论剑中国杭州网络安全技能大赛 优秀奖',
+                         '[2019/??/??] - X-NUCA 全国高校网安联赛 第 23 名',
+                         '[2019/??/??] - 福建省黑盾杯网络空间安全技能大赛 特等奖',
+                         '[2019/??/??] - 全国软件测试大赛 Web 安全测试个人赛总决赛 二等奖',
+                         '[2019/??/??] - 全国软件测试大赛 Web 安全测试个人赛省赛 一等奖',
+                         '[2019/??/??] - 全国大学生信息安全竞赛创新能力实践赛全国总决赛 三等奖',
+                         '[2019/??/??] - 第十二届全国大学生信息安全竞赛创新能力实践赛华东南赛区半决赛 特等奖',
+                         '[2019/??/??] - 第五届百越杯福建省高校网络空间安全大赛 三等奖',
+                         '[2019/??/??] - 高校网络信息安全管理运维挑战赛 三等奖',
+                         '[2019/??/??] - “黄鹤杯”网络安全人才与创新峰会暨网络安全服务与创新能力大赛 优秀奖',
+                         '[2019/??/??] - 西湖论剑中国杭州网络安全技能大赛 优秀奖',
                     ],
                },{
                     date: "2018",

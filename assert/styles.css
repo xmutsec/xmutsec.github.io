@@ -1,5 +1,5 @@
 /* 
-     @Author: Po7mn1
+     @Author: rYu1nser
 */
 *{
      font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
@@ -14,6 +14,9 @@
 }
 .lkll{
      position: fixed;right: 30px;bottom: 30px;margin-bottom: 20px;
+}
+.img-1{
+     width: 100px;
 }
 @keyframes rgb{li
      0% {color:rgb(255, 0, 0)}
@@ -51,7 +54,7 @@
 }
 .logo{
      display: flex;
-     width: 180px;
+     width: 680px;
      margin: 0 auto;
      padding-bottom: 14px;
 }
@@ -110,6 +113,12 @@ a.active{color:#d82727!important}
      border-bottom: 1px solid rgb(229, 229, 229);
      padding-top: 5px;
      padding-bottom: 8px;
+}
+.h-title{
+     display: flex;
+     justify-content: center;
+     width: 100%;
+
 }
 .panel img{
      float: left;

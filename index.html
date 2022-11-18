@@ -1,3 +1,7 @@
+<!-- 
+     @Author: rYu1nser
+     @Copyright XMUTSEC 2016-Now
+ -->
 <!DOCTYPE html>
 <html lang="en">
      <head>
@@ -35,8 +39,9 @@
                          <li><a class="line">/</a></li>
                          <li><a goto="#join">加入我们</a></li>
                     </nav>
-                    <img src="./assert/640.gif" class="img1" title="https://www.xmutsec.cn">
+                    <!-- <img src="./assert/640.gif" class="img1" title="https://www.xmutsec.cn"> -->
                     <section id="infor" class="active">
+                         <h1 class="h-title">厦门理工学院信息安全协会（网络与信息安全协会）</h1>
                          <span class="bfont">协会介绍</span>
                          <p>我们的故事要从二〇一六年的夏天说起在那一年的六月九日几位志同道合的少年人在鹭江之畔一拍即合成立了一支CTF战队CodeMonster与之同时诞生的还有圣后溪英兰德皇家幼儿园附属理工学院信息安全协会（厦门理工学院信息安全协会），我们研究的内容主要以安全类为主，辅为ACG爱好</p>
                          <p>CTFTime: https://ctftime.org/team/?</p>
@@ -109,7 +114,7 @@
                               <h3>{{ mem.date }}</h3>
                               <div v-for="(index) in mem['members'].length">
                                    <div class="panel">
-                                        <img :src="mem.avatars[index-1]">
+                                        <img :src="mem.avatars[index-1]" class="img-1">
                                         <li><p class="ez" style="font-weight: bold;">{{ mem.members[index-1] }}</p></li>
                                         <li><p class="ez">{{ mem.descri[index-1] }}</p></li>
                                         <li><p class="ez">Blog:  <a :href="getHref(mem.links[index-1])" target="_blank">{{ mem.links[index-1] }}</a></p></li>
@@ -136,7 +141,7 @@
                <script src="./assert/easyjs.js"></script>
                <div class="footer">
                     <!-- <img src="./assert/footerlogo_redrawByPo7.png" class="flogo"> -->
-                    <p>©XMUTSEC - <a href="https://rce.iloli.moe">rYu1nser</a></p>
+                    <p>©Copyright 2016~现在 XMUTSEC - <a href="https://rce.iloli.moe">rYu1nser</a></p>
                </div>
           </div>
           <div class="lkll">
