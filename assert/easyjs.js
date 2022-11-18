@@ -51,31 +51,31 @@ var team = new Vue({
                     links:['Anonymous','Anonymous','Anonymous','Anonymous'],
                     avatars:['/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg'],
                     descri:['Anonymous','Anonymous','Anonymous','Anonymous'],
-                    members: ['Anonymous','Anonymous','Anonymous','Anonymous']
+                    members: ['Anonymous (Leader)','Anonymous','Anonymous','Anonymous']
                },{
                     date: "2020",
                     links:['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
                     avatars:['/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg'],
                     descri:['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
-                    members: ['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous']
+                    members: ['Anonymous (Leader)','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous']
                },{
                     date: "2019",
                     links:['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
                     avatars:['/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg'],
                     descri:['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
-                    members: ['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous']
+                    members: ['Anonymous (Leader)','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous']
                },{
                     date: "2018",
                     links:['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
                     avatars:['/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg'],
                     descri:['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
-                    members: ['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous']
+                    members: ['Anonymous (Leader)','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous']
                },{
                     date: "2017",
                     links:['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
                     avatars:['/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg','/assert/members/anonymous.svg'],
                     descri:['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
-                    members: ['Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous']
+                    members: ['Anonymous (Leader)','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous']
                },{
                     date: "2016",
                     links:['https://github.com/xishir','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous'],
