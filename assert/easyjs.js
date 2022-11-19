@@ -17,6 +17,7 @@ $(function(){
           $(this).addClass("active");
      });
 })
+
 var links = new Vue({
      el: '#links',
      data: {
@@ -26,6 +27,81 @@ var links = new Vue({
                     avatars:['https://cdn.jsdelivr.net/gh/NISASec/blog_image/blog/QQ%E5%9B%BE%E7%89%8720210804132927.jpg','https://dlusec.cn/img/DLUSEC.png'],
                     names: ['福建师范大学网络与信息安全协会', '大理大学网络安全协会'],
                     descri: ['FJNUSEC','DLUSEC']
+               },
+          ]
+     },
+     // cnm报你妈错呢傻逼
+     methods: {
+          even: function (numbers) {
+               return numbers.filter(function (number) {
+                    return number
+               })
+          },
+          getHref: function (url){
+               return url
+          }
+     }
+})
+
+var archive = new Vue({
+     el: '#archive',
+     data: {
+          object:[
+               {
+                    names: [
+                         '2022年厦门理工学院第四届网络空间安全大赛落下帷幕',
+                         '我院学子在第十五届全国大学生信息安全竞赛创新实践能力赛全国总决赛中获三等奖',
+                         '我院学子在第十五届全国大学生信息安全竞赛创新实践能力赛华东南分区赛中喜获佳绩',
+                         '2021年厦门理工学院第三届网络空间安全大赛落下帷幕',
+                         '我院学子在2019年“黑盾杯”网络空间安全知识和安全技能竞赛获全省亚军',
+                         '我院学子在第四届“福建省高校网络空间安全大赛”中获全省第二名',
+                         '厦门理工学院“国科-i春秋”杯第二届网络空间安全大赛完满结束',
+                         '厦门理工学院“国科-i春秋”杯第二届网络空间安全大赛完满结束',
+                         '我院学子在2017-2018全国高校信息安全铁人三项赛取得优异成绩',
+                         '我院学子在第三届“福建省高校网络空间安全大赛”中获全省第三名',
+                         '我院CodeMonster团队在第四届“黑盾杯”信息安全竞赛中勇夺全省第二名',
+                         '我院CodeMonster信息安全团队在第二届48小时黑客马拉松破解大奖赛获佳绩',
+                         '厦门理工学院“国科杯”第一届网络信息安全大赛圆满落幕', 
+                         '我院顺利举办“国科杯”第一届信息安全校赛总决赛',
+                         '我院学子在信息安全铁人三项赛华南赛区中喜获季军',
+                         '我院学子喜获第二届“福建省高校网络空间安全大赛”佳绩'
+                    ],
+                    links:[
+                         'https://mp.weixin.qq.com/s?__biz=Mzg4NDcxMzQyMA==&mid=2247484265&idx=1&sn=d171b11c1dd3631b388b5c5651fe4417',
+                         'https://cs.xmut.edu.cn/info/1074/4562.htm',
+                         'https://cs.xmut.edu.cn/info/1074/4543.htm',
+                         'https://mp.weixin.qq.com/s?__biz=Mzg4NDcxMzQyMA==&mid=2247484028&idx=1&sn=530145d367d4d33c7f43994d75052a5e',
+                         'https://cs.xmut.edu.cn/info/1074/1032.htm',
+                         'https://cs.xmut.edu.cn/info/1074/1046.htm',
+                         'https://cs.xmut.edu.cn/info/1074/1036.htm',
+                         'https://cs.xmut.edu.cn/info/1058/2898.htm',
+                         'https://cs.xmut.edu.cn/info/1074/1042.htm',
+                         'https://cs.xmut.edu.cn/info/1074/1066.htm',
+                         'https://cs.xmut.edu.cn/info/1074/1094.htm',
+                         'https://cs.xmut.edu.cn/info/1074/1093.htm',
+                         'https://cs.xmut.edu.cn/info/1074/1102.htm',
+                         'https://cs.xmut.edu.cn/info/1058/3317.htm',
+                         'https://cs.xmut.edu.cn/info/1074/1100.htm',
+                         'https://cs.xmut.edu.cn/info/1074/1122.htm'
+                    ],
+                    dates: [
+                         '2022年11月19日',
+                         '2022年09月06日',
+                         '2022年07月07日',
+                         '2021年12月11日',
+                         '2019年09月16日',
+                         '2018年12月19日',
+                         '2018年12月10日',
+                         '2018年11月15日',
+                         '2018年11月15日',
+                         '2017年12月14日',
+                         '2017年12月08日',
+                         '2017年12月08日',
+                         '2017年05月15日',
+                         '2017年05月07日',
+                         '2017年04月28日',
+                         '2016年12月14日'
+                    ],
                },
           ]
      },

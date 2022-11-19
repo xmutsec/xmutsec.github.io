@@ -19,7 +19,7 @@
           <div class="container">
                <div class="row">
                     <div class="banner">
-                         <img src="./assert/logo.svg" class="logo">
+                         <img src="./assert/logo.png" class="logo">
                     </div>
                     <div class="banner">
                          <p class="des">Xiamen University Of Technology Cyberspace Security Association</p>
@@ -29,7 +29,7 @@
                          <li><a class="line">/</a></li>
                          <li><a goto="#branch">研究方向</a></li>
                          <li><a class="line">/</a></li>
-                         <li><a goto="#photos"><del>靓照</del></a></li>
+                         <li><a goto="#archive">事迹</a></li>
                          <li><a class="line">/</a></li>
                          <li><a goto="#award">荣誉</a></li>
                          <li><a class="line">/</a></li>
@@ -120,9 +120,13 @@
                               </div>
                          </nav>          
                     </section>
-                    <section id="branch">
-                         <span class="bfont">靓照</span>
-                         <img src="">
+                    <section id="archive">
+                         <span class="bfont">事迹</span>
+                         <nav v-for="(eve) in object" style="font-size: 14px;list-style: none;">
+                              <div v-for="(index) in eve['names'].length">
+                                   <li><p>[{{eve.dates[index - 1]}}] - <a :href="getHref(eve.links[index - 1])" target="_blank">{{ eve.names[index-1] }}</a></p></li>
+                              </div>
+                         </nav>
                     </section>
                     <section id="members">
                          <span class="bfont">历届成员</span>
@@ -147,7 +151,7 @@
                     </section>
                     <section id="join">
                          <span class="bfont">加入我们</span>
-                         <p><img src="./favicon.svg" style="width: 300px;float: left;"></p>
+                         <p><img src="./assert/biglogo.png" style="width: 300px;float: left;"></p>
                          <p>2022年纳新活动已开启，2022迎新群：<b>818071925</b>（往死里加🥰）</p>
                          <p>提问：<a href="https://support.qq.com/products/434073">https://support.qq.com/products/434073</a></p>
                          <p>我们仅限 <b>厦门理工学院在校生</b> 加入，如您并不是厦门理工学院在校生，您可以关注其他的信息安全团队。如果您是面向<b>0基础</b>的新生，请不用担心，<b>我们会在开学之后会开展纳新宣讲会，之后更有寒/暑期集训纳新。</b></p>
