@@ -23,8 +23,8 @@ var links = new Vue({
      data: {
           object:[
                {
-                    links:['hhttps://fjnusec.cn/','hhttps://dlusec.cn/'],
-                    avatars:['hhttps://cdn.jsdelivr.net/gh/NISASec/blog_image/blog/QQ%E5%9B%BE%E7%89%8720210804132927.jpg','hhttps://dlusec.cn/img/DLUSEC.png'],
+                    links:['https://fjnusec.cn/','https://dlusec.cn/'],
+                    avatars:['https://cdn.jsdelivr.net/gh/NISASec/blog_image/blog/QQ%E5%9B%BE%E7%89%8720210804132927.jpg','https://dlusec.cn/img/DLUSEC.png'],
                     names: ['福建师范大学网络与信息安全协会', '大理大学网络安全协会'],
                     descri: ['FJNUSEC','DLUSEC']
                },
