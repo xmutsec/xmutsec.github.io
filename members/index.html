@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="XMUTSEC">
+
+
+    <meta name="subtitle" content="Hack The Planet">
+
+
+    <meta name="description" content="厦门理工学院信息安全协会官网，这是一个热爱信息安全、网络安全等领域的团体">
+
+
+
+<style>
+*{
+    font-family:"PingFang SC","Microsoft Yahei",sans-serif;
+}
+.app-banner {
+    content: "";
+    display: block;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -99;
+    -webkit-clip-path: polygon(100% 0,0 0,0 77.5%,1% 77.4%,2% 77.1%,3% 76.6%,4% 75.9%,5% 75.05%,6% 74.05%,7% 72.95%,8% 71.75%,9% 70.55%,10% 69.3%,11% 68.05%,12% 66.9%,13% 65.8%,14% 64.8%,15% 64%,16% 63.35%,17% 62.85%,18% 62.6%,19% 62.5%,20% 62.65%,21% 63%,22% 63.5%,23% 64.2%,24% 65.1%,25% 66.1%,26% 67.2%,27% 68.4%,28% 69.65%,29% 70.9%,30% 72.15%,31% 73.3%,32% 74.35%,33% 75.3%,34% 76.1%,35% 76.75%,36% 77.2%,37% 77.45%,38% 77.5%,39% 77.3%,40% 76.95%,41% 76.4%,42% 75.65%,43% 74.75%,44% 73.75%,45% 72.6%,46% 71.4%,47% 70.15%,48% 68.9%,49% 67.7%,50% 66.55%,51% 65.5%,52% 64.55%,53% 63.75%,54% 63.15%,55% 62.75%,56% 62.55%,57% 62.5%,58% 62.7%,59% 63.1%,60% 63.7%,61% 64.45%,62% 65.4%,63% 66.45%,64% 67.6%,65% 68.8%,66% 70.05%,67% 71.3%,68% 72.5%,69% 73.6%,70% 74.65%,71% 75.55%,72% 76.35%,73% 76.9%,74% 77.3%,75% 77.5%,76% 77.45%,77% 77.25%,78% 76.8%,79% 76.2%,80% 75.4%,81% 74.45%,82% 73.4%,83% 72.25%,84% 71.05%,85% 69.8%,86% 68.55%,87% 67.35%,88% 66.2%,89% 65.2%,90% 64.3%,91% 63.55%,92% 63%,93% 62.65%,94% 62.5%,95% 62.55%,96% 62.8%,97% 63.3%,98% 63.9%,99% 64.75%,100% 65.7%);
+    clip-path: polygon(100% 0,0 0,0 77.5%,1% 77.4%,2% 77.1%,3% 76.6%,4% 75.9%,5% 75.05%,6% 74.05%,7% 72.95%,8% 71.75%,9% 70.55%,10% 69.3%,11% 68.05%,12% 66.9%,13% 65.8%,14% 64.8%,15% 64%,16% 63.35%,17% 62.85%,18% 62.6%,19% 62.5%,20% 62.65%,21% 63%,22% 63.5%,23% 64.2%,24% 65.1%,25% 66.1%,26% 67.2%,27% 68.4%,28% 69.65%,29% 70.9%,30% 72.15%,31% 73.3%,32% 74.35%,33% 75.3%,34% 76.1%,35% 76.75%,36% 77.2%,37% 77.45%,38% 77.5%,39% 77.3%,40% 76.95%,41% 76.4%,42% 75.65%,43% 74.75%,44% 73.75%,45% 72.6%,46% 71.4%,47% 70.15%,48% 68.9%,49% 67.7%,50% 66.55%,51% 65.5%,52% 64.55%,53% 63.75%,54% 63.15%,55% 62.75%,56% 62.55%,57% 62.5%,58% 62.7%,59% 63.1%,60% 63.7%,61% 64.45%,62% 65.4%,63% 66.45%,64% 67.6%,65% 68.8%,66% 70.05%,67% 71.3%,68% 72.5%,69% 73.6%,70% 74.65%,71% 75.55%,72% 76.35%,73% 76.9%,74% 77.3%,75% 77.5%,76% 77.45%,77% 77.25%,78% 76.8%,79% 76.2%,80% 75.4%,81% 74.45%,82% 73.4%,83% 72.25%,84% 71.05%,85% 69.8%,86% 68.55%,87% 67.35%,88% 66.2%,89% 65.2%,90% 64.3%,91% 63.55%,92% 63%,93% 62.65%,94% 62.5%,95% 62.55%,96% 62.8%,97% 63.3%,98% 63.9%,99% 64.75%,100% 65.7%);
+}
+body{background:#000000;}
+.content {
+  border-left: 4px solid #333333;
+}
+.content.content-post .article-header .post-title {
+	color: #ffffff;
+}
+.item-post .post-title {
+	color: #777777;
+}
+.item-year a.text-year {
+	color: #777777;
+}
+.page-header .box-blog-info img {
+	margin-top:0px;
+}
+.content.content-about .about-list .about-item .text {
+	color: #777777;
+}
+.box-prev-next {
+	margin-top:0px;
+}
+
+.page-header .box-blog-info .info .name {
+	color: #ffffff;
+}
+
+.article-content p{
+	color: #ffffff;
+}
+
+code {
+  padding: 0px 2px;
+  vertical-align: baseline;
+  border-radius: 0px;
+  background-color: #000;
+  color: #e96900;
+}
+
+
+	   body{
+			overflow: hidden;  
+		}
+
+       .index-icon img {  
+           display: inline-block;  
+       }  
+         
+       .index-icon {  
+           width: 50%;  
+           margin: 0px auto;  
+       }  
+         
+       .index-icon img {  
+           animation: myfirst 2s linear infinite;  
+       }  
+
+	   
+         
+       @keyframes myfirst {  
+           0% {  
+            transform: rotate(0deg);
+               transform: translate(0px, 0px);  
+           }  
+           50% {  
+               transform: translate(0px, -10px);  
+           }  
+           100% {  
+            transform: rotate(360deg);
+               transform: translate(0px, 0px);  
+           }  
+       }   
+	   
+
+.word{
+    margin: 0 auto;
+}
+
+
+
+@keyframes lefteaseinAnimate{
+    0%{ transform: translateX(-2000px); opacity: 0;transform: rotate(0deg);}   
+    100%{ transform: translateX(0px); opacity: 1;transform: rotate(360deg);}         
+}
+@-webkit-keyframes lefteaseinAnimate{
+    0%{ transform: translateX(-2000px); opacity: 0;transform: rotate(0deg);}   
+    100%{ transform: translateX(0px); opacity: 1;transform: rotate(360deg);}      
+}
+@-o-keyframes lefteaseinAnimate{
+    0%{ transform: translateX(-2000px); opacity: 0;transform: rotate(0deg);}   
+    100%{ transform: translateX(0px); opacity: 1;transform: rotate(360deg);}      
+}
+@-ms-keyframes lefteaseinAnimate{
+    0%{ transform: translateX(-2000px); opacity: 0;transform: rotate(0deg);}   
+    100%{ transform: translateX(0px); opacity: 1;transform: rotate(360deg);}      
+}
+@-moz-keyframes lefteaseinAnimate{
+    0%{ transform: translateX(-2000px); opacity: 0;transform: rotate(0deg);}   
+    100%{ transform: translateX(0px); opacity: 1;transform: rotate(360deg);}      
+}
+.name{
+    animation: lefteaseinAnimate 1s ease 1;    
+    -webkit-animation: lefteaseinAnimate 1s ease 1;
+    -ms-animation: lefteaseinAnimate 1s ease 1;
+    -o-animation: lefteaseinAnimate 1s ease 1;
+    -moz-animation: lefteaseinAnimate 1s ease 1;
+    
+    
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+}
+
+
+@keyframes righteaseinAnimate{
+    0%{ transform: translateX(2000px); opacity: 0;}  
+    100%{ transform: translateX(0px); opacity: 1;}      
+}
+@-webkit-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-o-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-ms-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-moz-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+.slogan{
+    animation: righteaseinAnimate 1s ease 1;    
+    -webkit-animation: righteaseinAnimate 1s ease 1;
+    -moz-animation: righteaseinAnimate 1s ease 1;
+    -ms-animation: righteaseinAnimate 1s ease 1;
+    -o-animation: righteaseinAnimate 1s ease 1;
+    
+    
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+}
+
+
+
+
+@keyframes AboveeaseinAnimate{
+    0%{ transform: translateY(-2000px); opacity: 0;}   
+    100%{ transform: translateY(0px); opacity: 1;}         
+}
+@-webkit-keyframes AboveeaseinAnimate{
+    0%{ -webkit-transform: translateY(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}    
+}
+@-o-keyframes AboveeaseinAnimate{
+    0%{ -webkit-transform: translateY(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}    
+}
+@-ms-keyframes AboveeaseinAnimate{
+    0%{ -webkit-transform: translateY(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}    
+}
+@-moz-keyframes AboveeaseinAnimate{
+    0%{ -webkit-transform: translateY(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}    
+}
+.index-icon{
+    animation: AboveeaseinAnimate 2s ease 1;    
+    -webkit-animation: AboveeaseinAnimate 2s ease 1;
+    -ms-animation: AboveeaseinAnimate 2s ease 1;
+    -o-animation: AboveeaseinAnimate 2s ease 1;
+    -moz-animation: AboveeaseinAnimate 2s ease 1;
+    
+    
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+}
+
+
+@-webkit-keyframes fadeIn {
+0% {
+opacity: 0; 
+}
+50% {
+opacity: 0; 
+}
+100% {
+opacity: 1; 
+}
+}
+
+.menu
+{
+-webkit-animation-name: fadeIn; 
+-webkit-animation-duration: 1s; 
+-webkit-animation-iteration-count: 1; 
+-webkit-animation-delay: 0s; 
+}
+</style>
+<title>成员 | 厦门理工学院信息安全协会 - Hack The Planet</title>
+
+
+
+    <link rel="icon" href="/image/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar" style="height: 5rem; line-height: 5rem; width: 100%; background: #FFF;">
+        <div class="container">
+            <a href="/" style="display: flex; align-items: center;">
+                <div class="navbar-header header-logo" style="display: flex; align-items: center;">
+                    <!-- <a href="/">XMUTSEC</a> -->
+                    <img src="https://www.xmutsec.cn/image/team.png" style="width: 255px;">
+                </div>
+            </a>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">文章</a>
+                
+                    <a class="menu-item" href="/award">荣誉</a>
+                
+                    <a class="menu-item" href="/members">成员</a>
+                
+                    <a class="menu-item" href="/links">友链</a>
+                
+                    <a class="menu-item" href="/join">加入我们</a>
+                
+                    <a class="menu-item" href="/about">关于</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">XMUTSEC</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">文章</a>
+                
+                    <a class="menu-item" href="/award">荣誉</a>
+                
+                    <a class="menu-item" href="/members">成员</a>
+                
+                    <a class="menu-item" href="/links">友链</a>
+                
+                    <a class="menu-item" href="/join">加入我们</a>
+                
+                    <a class="menu-item" href="/about">关于</a>
+                
+            </div>
+        </div>
+    </nav>
+    <style>
+
+
+        .rotating-logo {
+            animation: rot1ate 1s infinite linear;
+        }
+    </style>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+
+            <div class="main">
+                <div class="container">
+    <article class="post-wrap page">
+        
+        <h2 class="post-title">成员</h2>
+        
+        <section class="post-content">
+            <p>CodeMonster战队和厦门理工学院信息安全协会（XMUTSEC）是由厦门理工学院一群对网络&#x2F;信息安全感兴趣的年轻人组成的兴趣团队，团队研究的方向包括但不限于有Web安全、软件破解、逆向工程、前后端开发、无线电，在我们中间有人深造于<strong>纽约大学&#x2F;西北工业大学&#x2F;广州大学</strong>，有人就职于<strong>安恒信息&#x2F;华为&#x2F;奇安信&#x2F;腾讯&#x2F;阿里&#x2F;长亭&#x2F;默安</strong>等业内知名企业，团队目前除了研究自己感兴趣的方向，同时积极参与国内（外）CTF及网络安全竞赛。</p>
+<p><strong>以下数据来源于 <a target="_blank" rel="noopener" href="http://www.codemonster.cn/">www.codemonster.cn</a> 及 <a target="_blank" rel="noopener" href="http://www.xmutsec.com/">www.xmutsec.com</a> ，如有遗漏，请联系QQ：378768535</strong></p>
+<h3 id="2021-2022"><a href="#2021-2022" class="headerlink" title="2021-2022"></a>2021-2022</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://rce.iloli.moe/">rYu1nser (IceCliffs)</a> - 千里之行，终于足下（21-22协会会长）</li>
+</ul>
+<h3 id="2020-2021"><a href="#2020-2021" class="headerlink" title="2020-2021"></a>2020-2021</h3><ul>
+<li>me7eorite - （Orz）</li>
+<li>x1aoB1n（20-21协会会长，<strong>协会の神！</strong>）</li>
+<li>桃子乌龙</li>
+<li>whisper</li>
+</ul>
+<h3 id="2019-2020"><a href="#2019-2020" class="headerlink" title="2019-2020"></a>2019-2020</h3><ul>
+<li>？？？</li>
+</ul>
+<h3 id="2018-2019"><a href="#2018-2019" class="headerlink" title="2018-2019"></a>2018-2019</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://white.xmutsec.com/">White</a> - 不可结缘 徒增寂寞</li>
+<li><a target="_blank" rel="noopener" href="http://alienworm.top/">Alienworm</a> - 还没找到门的ctf选手</li>
+<li><a target="_blank" rel="noopener" href="https://southseast.cc/">Southseast</a> - 荆棘刺穿我的脚掌路坎坷而漫长。</li>
+<li><a target="_blank" rel="noopener" href="http://blog.thecosmos.cn/">Cosmos</a> - 人生如逆旅,我亦是行人。</li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/nepire">Nepire</a> - 厦航公子:一份代码千两行,科学上网我最强,赛后秒题理气壮,挺进决赛喊凉凉。</li>
+<li><a target="_blank" rel="noopener" href="http://anonym1ty.cn/">豆浆油条</a> - 志在山顶的人，不会贪念山腰的风景。</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/SweetPotatoo">SweetPotato</a> - 我能吞下玻璃而不伤身体</li>
+</ul>
+<h3 id="2017-2018"><a href="#2017-2018" class="headerlink" title="2017-2018"></a>2017-2018</h3><ul>
+<li><a target="_blank" rel="noopener" href="http://sheldon.xmutsec.com/">Sheldon</a> - 人生不如意,十有八九（17-18协会会长）</li>
+<li><a target="_blank" rel="noopener" href="http://saltyfishyu.xmutsec.com/">Saltyfishy</a> - 人如果没有梦想，那可太舒服了！</li>
+<li><a href="">张动之</a> - 入门级ctf选手</li>
+</ul>
+<h3 id="2016-2017"><a href="#2016-2017" class="headerlink" title="2016-2017"></a>2016-2017</h3><ul>
+<li><a target="_blank" rel="noopener" href="http://blog.csdn.net/PeterZ1997/">PeterZ</a> - 一只沉迷代码的自由鹰（协会创始人，16-17协会会长）</li>
+<li><a target="_blank" rel="noopener" href="https://www.codemonster.cn/">Xishir</a> - A code monster.（协会创始人，16-18协会副会长）</li>
+<li><a target="_blank" rel="noopener" href="http://www.lmxspace.com/">l1nk3r</a> - 愿你出走半生归来仍是少年</li>
+<li><a target="_blank" rel="noopener" href="https://blog.backcover7.cc/">backCover7</a> - Light up the Night!</li>
+<li><a href="">Jaken</a> - River flows in you.</li>
+<li><a href="">泡面</a> - 唯利是图</li>
+<li><a target="_blank" rel="noopener" href="http://ju5tw4nty0u.top/">ju5tw4nty0u</a> - Nothing is impossible to a willing heart.</li>
+</ul>
+
+        </section>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© XMUTSEC | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
