@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - main # default branch
-
+  pull_request:
 jobs:
   pages:
-    if: ${{ GITHUB_REF_NAME == 'main'}}
+    if: ${{ github.ref_name == "main" || github.event_name == "pull_request"}} 
     runs-on: ubuntu-latest
     permissions:
       contents: write
