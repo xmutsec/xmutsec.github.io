@@ -73,6 +73,18 @@ markdown:
   enable_rules:
   disable_rules:
   plugins:
+    - name: 'markdown-it-emoji'
+      options:
+          shortcuts:
+            laughing: ':D'
+    - name: 'markdown-it-sub'
+    - name: 'markdown-it-sup'
+    - name: 'markdown-it-mark'
+    - name: '@renbaoshuo/markdown-it-katex'
+      options:
+        skipDelimitersCheck: true
+    - name: 'markdown-it-task-lists'
+    - name: 'markdown-it-imsize'
   anchors:
     level: 2
     collisionSuffix: ''
@@ -133,6 +145,10 @@ theme: volantis
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+plugins:
+  - markdown-it-task-lists
+  - markdown-it-imsize
 
 feed:
   enable: true

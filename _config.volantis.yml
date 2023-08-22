@@ -4,7 +4,7 @@ info:
   theme_docs: https://volantis.js.org/ # This is theme's URL.
   theme_repo: https://github.com/volantis-x/hexo-theme-volantis
 # Debug 调试模式
-debug: env # false: 关闭调试模式， env：环境配置检查， pjax：调试pjax，rightMenus: 调试右键
+debug: false # false: 关闭调试模式， env：环境配置检查， pjax：调试pjax，rightMenus: 调试右键
 ############################### 默认占位图 ###############################
 default:
   avatar: volantis-static/media/placeholder/avatar/round/3442075.svg # https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/avatar/round/3442075.svg
@@ -1039,7 +1039,7 @@ plugins:
 
 ### 自定义右键
 rightmenus:
-  enable: false
+  enable: true
   # 右键菜单项及加载顺序
   # 内容示例：plugins.[组名], menus.[组名], hr(分割线，推荐去线留白), music(音乐控制器)
   order:
@@ -1087,7 +1087,7 @@ rightmenus:
       - {id: 'right', name: '转到下一页', icon: 'fa-solid fa-arrow-right', event: 'history.forward()', group: 'navigation'}
       - {id: 'redo', name: '刷新当前页面', icon: 'fa-solid fa-redo', event: 'window.location.reload()', group: 'navigation'}
       - {id: 'up', name: '回到顶部', icon: 'fa-solid fa-arrow-up', event: 'VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)', group: 'navigation'}
-      #- {id: 'home', name: '回到首页', icon: 'fa-solid fa-home', link: '/', group: 'navigation'}
+      - {id: 'home', name: '回到首页', icon: 'fa-solid fa-home', link: '/', group: 'navigation'}
     # 文本输入框相关组件
     # 生效于 input/textarea，粘贴、剪切、全选
     inputBox:
@@ -1100,7 +1100,7 @@ rightmenus:
       - {id: 'copyText', name: '复制文本', icon: 'fa-solid fa-copy', event: 'copyText', group: 'seletctText'}
       - {id: 'searchWord', name: '站内搜索', icon: 'fa-solid fa-search', event: 'OpenSearch(__text__)', group: 'seletctText'}
       - {id: 'bingSearch', name: '必应搜索', icon: 'fa-solid fa-search', event: 'window.open(`https://cn.bing.com/search?q=${__text__}`)', group: 'seletctText'}
-      #- {id: 'googleSearch', name: '谷歌搜索', icon: 'fa-solid fa-search', event: 'window.open(`https://www.google.com/search?q=${__text__}`)', group: 'seletctText'}
+      - {id: 'googleSearch', name: '谷歌搜索', icon: 'fa-solid fa-search', event: 'window.open(`https://www.google.com/search?q=${__text__}`)', group: 'seletctText'}
     # 链接判断组件
     # 生效于链接处的右键行为，__link__ 为链接地址
     elementCheck:
@@ -1119,11 +1119,9 @@ rightmenus:
   # 右键自定义菜单区域
   menus:
     link:
-      - {id: 'help', name: '常见问题', icon: 'fa-solid fa-question', link: 'https://volantis.js.org/faqs/', group: 'link'}
-      - {id: 'examples', name: '示例博客', icon: 'fa-solid fa-rss', link: 'https://volantis.js.org/examples/', group: 'link'}
-      - {id: 'contributors', name: '加入社区', icon: 'fa-solid fa-fan', link: 'https://volantis.js.org/contributors/', group: 'link'}
+      - {id: 'contributors', name: '加入我们', icon: 'fa-solid fa-fan', link: '/join', group: 'link'}
       - hr
-      - {id: 'source_docs', name: '本站源码', icon: 'fa-solid fa-code-branch', link: 'https://github.com/volantis-x/volantis-docs/', group: 'link'}
+      - {id: 'source_docs', name: '本站源码', icon: 'fa-solid fa-code-branch', link: 'https://github.com/xmutsec/xmutsec.github.io/', group: 'link'}
       - {id: 'source_theme', name: '主题源码', icon: 'fa-solid fa-code-branch', link: 'https://github.com/volantis-x/hexo-theme-volantis/', group: 'link'}
     darkMode:
       - {id: 'darkMode', name: '暗黑模式', icon: 'fa-solid fa-moon', event: 'volantis.dark.toggle()', group: 'darkMode'}
@@ -1255,7 +1253,7 @@ color_scheme:
 ############################### Custom css ############################### > start
 custom_css:
   cursor:
-    enable: #true
+    enable: true
     text: volantis-static/media/cursor/text.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/text.png
     pointer: volantis-static/media/cursor/pointer.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/pointer.png
     default: volantis-static/media/cursor/left_ptr.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/left_ptr.png
