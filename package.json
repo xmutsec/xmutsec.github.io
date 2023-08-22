@@ -1,7 +1,8 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
-  "private": true,
+  "license": "MIT",
+  "name": "xmutsec",
+  "version": "20230822",
+  "private": false,
   "scripts": {
     "test": "hexo clean && hexo generate && hexo server --debug",
     "build": "hexo generate",
@@ -22,10 +23,8 @@
     "hexo-generator-tag": "^2.0.0",
     "hexo-helper-qrcode": "^1.0.2",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^6.0.0",
+    "hexo-renderer-markdown-it": "^7.1.0",
     "hexo-renderer-stylus": "^3.0.0",
-    "hexo-server": "^3.0.0",
-    "hexo-theme-landscape": "^1.0.0",
-    "hexo-theme-volantis": "^5.8.0"
+    "hexo-server": "^3.0.0"
   }
 }
