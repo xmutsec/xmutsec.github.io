@@ -7,15 +7,14 @@ comments: false
 CodeMonster战队和厦门理工学院信息安全协会（XMUTSEC）是由厦门理工学院一群对网络/信息安全感兴趣的年轻人组成的兴趣团队，团队研究的方向包括但不限于有Web安全、软件破解、逆向工程、前后端开发、无线电，在我们中间有人深造于**纽约大学/西北工业大学/广州大学**，有人就职于**安恒信息/华为/奇安信/腾讯/阿里/长亭/默安**等业内知名企业，团队目前除了研究自己感兴趣的方向，同时积极参与国内（外）CTF及网络安全竞赛。
 
 **以下数据来源于 www.codemonster.cn 及 www.xmutsec.com ，如有遗漏，请联系QQ：378768535**
-### 2022-2023
-- [brokenpoems](https://www.brokenpoems.xyz)
+
 ### 2021-2022
 
 - [rYu1nser (IceCliffs)](https://iloli.moe) - 關注東雪蓮謝謝喵，關注東雪蓮謝謝喵（21-22协会会长）
 - okle15 - Misc
 - [warn](http://repoint-re.top)
 - [Dragonkeep](http://dragonkeeep.top/) - 写不出web的web手
-
+- [brokenpoems](https://www.brokenpoems.xyz)
 ### 2020-2021
 
 - me7eorite - （神）
