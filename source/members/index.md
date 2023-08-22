@@ -12,6 +12,9 @@ CodeMonster战队和厦门理工学院信息安全协会（XMUTSEC）是由厦�
 ### 2021-2022
 
 - [rYu1nser (IceCliffs)](https://iloli.moe) - 關注東雪蓮謝謝喵，關注東雪蓮謝謝喵（21-22协会会长）
+- okle15 - Misc
+- [warn](repoint-re.top)
+- [dragonkeep](http://dragonkeeep.top/)
 
 ### 2020-2021
 
