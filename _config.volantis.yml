@@ -185,7 +185,7 @@ cover:
       img: volantis-static/media/twemoji/assets/svg/1f396.svg
       url: award/
     - name: 成员
-      icon: fa-solid fa-user
+      icon: fa-solid fa-user-friends
       img : volantis-static/media/twemoji/assets/svg/1f465.svg
       url: members/
     - name: 友链
@@ -193,7 +193,7 @@ cover:
       img : volantis-static/media/twemoji/assets/svg/1f517.svg
       url: links/
     - name: 加入我们
-      icon: fa-solid fa-user-friends
+      icon: fa-solid fa-fan
       img : volantis-static/media/twemoji/assets/svg/1f44b.svg
       url: join/
 ############################### Cover ############################### > end
