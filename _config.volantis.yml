@@ -139,13 +139,13 @@ navbar:
       icon: fa-solid fa-award
       url: award/
     - name: 成员
-      icon: fa-solid fa-user
+      icon: fa-solid fa-user-friends
       url: members/
     - name: 友链
       icon: fa-solid fa-link
       url: links/
     - name: 加入我们
-      icon: fa-solid fa-user-friends
+      icon: fa-solid fa-fan
       url: join/
     - name: 关于
       icon: fa-solid fa-info-circle
