@@ -19,10 +19,10 @@ favicon: images/favicon.ico
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://www.xmutsec.cn/
-permalink: :year/:month/:day/:title/
+permalink: ':year/:month/:day/:title/'
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
@@ -46,9 +46,6 @@ external_link:
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
-marked:
-  prependRoot: true
-  postAsset: true
 relative_link: false
 future: true
 highlight:
@@ -63,7 +60,45 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: ''
-
+markdown:
+  preset: 'default'
+  render:
+    html: true
+    xhtmlOut: false
+    langPrefix: 'language-'
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  enable_rules:
+  disable_rules:
+  plugins:
+    - name: 'markdown-it-emoji'
+      options:
+          shortcuts:
+            laughing: ':D'
+    - name: 'markdown-it-sub'
+    - name: 'markdown-it-sup'
+    - name: 'markdown-it-mark'
+    - name: '@renbaoshuo/markdown-it-katex'
+      options:
+        skipDelimitersCheck: true
+    - name: 'markdown-it-task-lists'
+    - name: 'markdown-it-imsize'
+  anchors:
+    level: 2
+    collisionSuffix: ''
+    permalink: false
+    permalinkClass: 'header-anchor'
+    permalinkSide: 'left'
+    permalinkSymbol: '¶'
+    case: 0
+    separator: '-'
+  images:
+    lazyload: true
+    prepend_root: true
+    post_asset: true
+  inline: false  # https://markdown-it.github.io/markdown-it/#MarkdownIt.renderInline
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -98,8 +133,8 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
+#include:
+#exclude:
 ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
@@ -110,6 +145,10 @@ theme: volantis
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+plugins:
+  - markdown-it-task-lists
+  - markdown-it-imsize
 
 feed:
   enable: true
