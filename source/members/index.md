@@ -12,9 +12,9 @@ CodeMonster战队和厦门理工学院信息安全协会（XMUTSEC）是由厦�
 
 - [IceCliffs](https://iloli.moe) - 關注東雪蓮謝謝喵，關注東雪蓮謝謝喵（21-22协会会长）
 - okle15 - Misc
-- [warn](http://repoint-re.top)
+- [warn](https://www.warn11.top) - 只会密码的web手
 - [Dragonkeep](http://dragonkeeep.top/) - 写不出web的web手
-- [brokenpoems](https://www.brokenpoems.xyz)
+- [brokenpoems](https://www.brokenpoems.xyz) - fw pwnner
 
 ### 2020-2021
 
